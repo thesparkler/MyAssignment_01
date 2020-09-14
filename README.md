@@ -1,2 +1,2 @@
 # Assignment
-Shaadi match-matching app
+Shaadi Match-Making App
