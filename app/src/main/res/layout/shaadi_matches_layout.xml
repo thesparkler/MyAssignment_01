@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toTopOf="parent">
+
+
+  <ImageView
+      android:id="@+id/match_background"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.6"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/profile" />
+
+  <Button
+      android:id="@+id/btn_accept"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/button_margin"
+      android:layout_marginBottom="@dimen/button_margin"
+      android:background="@drawable/yellow_circle_drawable"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:text="@string/accept"
+      android:textSize="@dimen/button_textSize"
+      android:textColor="@android:color/black"
+      android:textStyle="bold"
+      android:textAllCaps="false"
+      android:padding="@dimen/button_padding"/>
+
+  <Button
+      android:id="@+id/btn_reject"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/button_margin"
+      android:layout_marginBottom="@dimen/button_margin"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/btn_accept"
+      android:background="@drawable/white_circle_drawable"
+      android:text="@string/reject"
+      android:textAllCaps="false"
+      android:textSize="@dimen/button_textSize"
+      android:textColor="@android:color/black"
+      android:padding="@dimen/button_padding"
+      android:textStyle="bold"/>
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:background="@drawable/black_gradient"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_editor_absoluteX="132dp"
+      tools:layout_editor_absoluteX="0dp" />
+
+  <TextView
+      android:id="@+id/titleTv"
+      android:layout_width="50dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/textView_margin"
+      android:text=""
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/textSize"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/imageView2"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.773" />
+
+  <TextView
+      android:id="@+id/ageTv"
+      android:layout_width="50dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/textView_margin"
+      android:text=""
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/textSize"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/titleTv"
+      app:layout_constraintVertical_bias="0.052" />
+
+  <TextView
+      android:id="@+id/nationalityTv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/textView_margin"
+      android:text=""
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/textSize"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.207"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/titleTv"
+      app:layout_constraintVertical_bias="0.052" />
+
+  <TextView
+      android:id="@+id/firstNameTV"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:text=""
+      android:textSize="@dimen/textSize"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/titleTv"
+      app:layout_constraintTop_toTopOf="@+id/imageView2"
+      app:layout_constraintVertical_bias="0.405" />
+
+  <TextView
+      android:id="@+id/lastNameTv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=""
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.051"
+      app:layout_constraintStart_toEndOf="@+id/firstNameTV"
+      app:layout_constraintTop_toTopOf="@+id/imageView2"
+      app:layout_constraintVertical_bias="0.405"
+      android:textSize="@dimen/textSize"/>
+
+</android.support.constraint.ConstraintLayout>
